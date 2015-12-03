@@ -1,0 +1,41 @@
+<% include partials/header.ejs %>
+
+ <!-- Render the Registration form  -->
+	<main class="container">
+	<!-- Display flash messages  -->
+	
+ <h1> Contact Form</h1>
+		<div class="col-sm-4">
+			<form method="post">
+        	<fieldset class="form-group">
+					<label for="firstname">First Name: *</label>
+					<input name="firstname" type="text" class="form-control" required />
+				</fieldset>
+        	<fieldset class="form-group">
+					<label for="lastname">Last Name: *</label>
+					<input name="lastname" type="text" class="form-control" required />
+				</fieldset>
+				<fieldset class="form-group">
+					<label for="email">Email: *</label>
+					<input name="email" type="email" class="form-control" required autofocus />
+				</fieldset>
+					<fieldset class="form-group">
+					<label for="message">Message: *</label>
+					<textarea name="message" type="textarea" class="form-control" required /></textarea>
+				</fieldset>
+				
+				
+				<fieldset class="form-group text-right">
+					<input type="submit" class="btn btn-success" value="Submit"/>
+				</fieldset>
+			</form
+		</div>
+	</main>
+<div class =content>
+<br/>
+
+<!--contact form-->
+
+  
+   <% include partials/boot.ejs %>
+<% include partials/footer %>
